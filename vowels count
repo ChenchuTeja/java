@@ -4,7 +4,7 @@ public class vowel {
     public static void main(String[] args)
         throws IOException
     {
-        String str = "GeeksForGeeks";
+        String str = "teja";
         str = str.toLowerCase();
         int count = 0;
  
