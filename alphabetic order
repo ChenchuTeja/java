@@ -1,0 +1,24 @@
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class NameSorter {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String[] names = { "John", "Jane", "Bob", "Alice", "Michael", "Emily" };
+
+    System.out.println("Original list of names: " + Arrays.toString(names));
+    System.out.print("Sort in (A)scending or (D)escending order? ");
+    char choice = sc.nextLine().toUpperCase().charAt(0);
+
+    if (choice == 'A') {
+      Arrays.sort(names);
+    } else if (choice == 'D') {
+      Arrays.sort(names, (a, b) -> b.compareTo(a));
+    } else {
+      System.out.println("Invalid choice.");
+      return;
+    }
+
+    System.out.println("Sorted list of names: " + Arrays.toString(names));
+  }
+}
