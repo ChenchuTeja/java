@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class intrest
+{
+static void calInterest(int pri, int age, int year){
+    double interest;
+   if(age<=60)
+{
+    interest=(pri*year*0.10)/100;
+    System.out.print("interes: " + interest);
+}
+else
+{
+    interest=(pri*year*0.12)/100;
+    System.out.print("interest: "+ interest);
+}  
+ }   
+
+public static void main(String[]args)
+{ Scanner sc=new Scanner(System.in);
+System.out.println("enetr the principal amount:");
+int pri=sc.nextInt();
+System.out.println("Enetr the no of years : ");
+int year=sc.nextInt();
+System.out.println("Enetr the Age : ");
+int age=sc.nextInt();
+double interest=0.0;
+calInterest(pri,age,year);
+
+}
+}
