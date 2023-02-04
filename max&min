@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class Main {
+  public static void main(String[] args) {
+    int[] array = {3, 4, 1, 5, 2};
+    int M = 3, N = 2;
+
+    Arrays.sort(array);
+    int max = array[array.length - M];
+    int min = array[N - 1];
+    int sum = max + min;
+    int diff = max - min;
+
+    System.out.println("Mth maximum number: " + max);
+    System.out.println("Nth minimum number: " + min);
+    System.out.println("Sum: " + sum);
+    System.out.println("Difference: " + diff);
+  }
+}
